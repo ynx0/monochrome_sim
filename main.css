@@ -1,0 +1,43 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #bdc8f0
+}
+
+
+/*.circle {
+	height: 25px;
+	width: 25px;
+	background-color: #000000;
+	border-radius: 50%;
+	display: inline-block;
+}*/
+/*
+.circle.tl {
+	right: -40%;
+}*/
+
+#main {
+	background: #003b83;
+	border-radius: 30px;
+	border-color: #c3d9d5;
+	text-align: center;
+	padding: 40px;
+	/*https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/*/
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#panel {
+	/*https://alligator.io/css/gradient-borders-pure-css/*/
+	border-style: solid;
+	border-radius: 2px;
+	border-image-source: linear-gradient(60deg, #bdc3c7, #485767);
+  	border-image-slice: 1;
+
+}

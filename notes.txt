@@ -1,0 +1,38 @@
+a a
+b a
+a a
+
+
+[row major]
+simPixel addr for b is 1, 0 // array index
+realPixel pos is (0,1)      // coordinate 
+
+
+panelWidth = 2
+panelHeight = 3
+
+scaleFactor = 3
+
+{2x3} * 2 = {4x6} // column major ordering
+
+
+a a  a a
+a a  a a
+
+b b  a a
+b b  a a
+
+a a  a a
+a a  a a
+
+
+
+[row major]
+simPixel addr for b is (1,0),
+realPixel pos is (0, 3) // coordinate
+                  x  y
+
+
+fn pixelCoordinate (pixelRow, pixelCol) {
+	return (pixelCol * scaleFactor, pixelRow * scaleFactor) 
+}
